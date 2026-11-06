@@ -22,14 +22,14 @@ jobs:
           role-duration-seconds: 900 # 15 minutes
 
       - name: Checkout bottlerocket-core-kit
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # 5.0.0
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # 7.0.1
         with:
           repository: bottlerocket-os/bottlerocket-core-kit
           ref: refs/heads/develop
           path: bottlerocket-core-kit/
 
       - name: Checkout amazon-vpc-cni-k8s
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # 5.0.0
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # 7.0.1
         with:
           repository: aws/amazon-vpc-cni-k8s
           ref: refs/heads/master
